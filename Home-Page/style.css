@@ -398,6 +398,28 @@ h1, h2, h3, h4, h5, h6 {
     left: 100%;
   }
 }
+.favorites-button {
+    font-size: 16px; /* Set font size to match other buttons */
+    color: #fff; /* Button text color */
+    background-color: #dc3545; /* Button background color */
+    border: none;
+    padding: 10px 20px; /* Set horizontal and vertical padding */
+    border-radius: .5rem; /* Round the button corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.favorites-button:hover {
+    background-color: #c82333; /* Change color on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
 
-
+.favorites-button .bi-heart {
+    font-size: 20px; /* Set icon size to match the button */
+    margin-right: 8px; /* Add space between icon and text */
+    width: 16px; /* Set the width of the icon */
+    height: 16px; /* Set the height of the icon */
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Favorites</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #dc3545;
+      color: white;
+      text-transform: uppercase;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+    .action-btn {
+      padding: 8px 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .action-btn:hover {
+      background-color: #0056b3;
+    }
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr {
+        margin-bottom: 1rem;
+      }
+      td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+      }
+      td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Favorites</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Book Title</th>
+        <th>Author</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Book Title">Book One</td>
+        <td data-label="Author">Author A</td>
+        <td data-label="Description">A brief description of Book One.</td>
+        <td data-label="Action">
+          <a href="#" class="action-btn">View Details</a>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Book Title">Book Two</td>
+        <td data-label="Author">Author B</td>
+        <td data-label="Description">A brief description of Book Two.</td>
+        <td data-label="Action">
+          <a href="#" class="action-btn">View Details</a>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Book Title">Book Three</td>
+        <td data-label="Author">Author C</td>
+        <td data-label="Description">A brief description of Book Three.</td>
+        <td data-label="Action">
+          <a href="#" class="action-btn">View Details</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

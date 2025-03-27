@@ -57,6 +57,17 @@
       </a>
 
       <div class="personal-profile d-flex gap-3 align-items-center justify-content-center me-5">
+        <a href="../Favorites/favorites.html">
+          <button class="btn btn-danger fs-28 mt-5 rounded p-3">Favorites <i class="bi bi-heart"></i></button>
+      </a>
+      
+        <script>
+          document.getElementById('favoritesButton').addEventListener('click', function(e) {
+            e.preventDefault(); // Sayfanın yenilenmesini engeller
+            window.location.href = '../Favorites/favorites.html';
+          });
+        </script>
+
         <a href="../Home-Page/index.html" target="_blank">
             <i role="button" class="bi bi-house-door-fill text-danger fs-32 ps-2 d-block d-sm-none">
             </i>
