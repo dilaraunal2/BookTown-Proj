@@ -14,6 +14,15 @@
 </head>
 <body>
   <header class="main-header">
+    <div class="search-container d-flex align-items-center">
+      <form action="/search" method="GET" class="d-flex">
+        <input type="text" name="q" placeholder="
+        Search for a book, author or category..." class="form-control" style="width: 250px;"/>
+        <button type="submit" class="btn btn-danger ms-2">
+          <i class="bi bi-search"></i> Search
+        </button>
+      </form>
+    </div>
     <section
       class="row-1 d-flex  flex-wrap-reverse flex-sm-nowrap justify-content-between align-content-center align-items-center py-4">
       <ul class="second-navbar-bi-list-clicked nav-bar list-unstyled position-absolute d-flex flex-column w-100">
