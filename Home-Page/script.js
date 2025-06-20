@@ -149,3 +149,23 @@ sortednovelsPerRate.slice(8,12).forEach(book => {
     bestNovelsCarouselItem3.innerHTML += (cartCreator(book));
 })
 
+// ---------YENİ EKLENDİ -------
+// discounted books section
+
+const discountedBooksCarouselItem1 = document.getElementById("discountedBooksCarouselItem1");
+const discountedBooksCarouselItem2 = document.getElementById("discountedBooksCarouselItem2");
+const discountedBooksCarouselItem3 = document.getElementById("discountedBooksCarouselItem3");
+
+const discountedBooks = books().filter(book => book.deal); // kitap nesnesinde .discount varsa
+
+discountedBooks.slice(0, 4).forEach(book => {
+    discountedBooksCarouselItem1.innerHTML += cartCreator(book);
+});
+
+discountedBooks.slice(4, 8).forEach(book => {
+    discountedBooksCarouselItem2.innerHTML += cartCreator(book);
+});
+
+discountedBooks.slice(8, 12).forEach(book => {
+    discountedBooksCarouselItem3.innerHTML += cartCreator(book);
+});
