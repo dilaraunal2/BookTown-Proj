@@ -76,9 +76,12 @@
       </a>
 
       <div class="personal-profile d-flex gap-3 align-items-center justify-content-center me-5">
-        <a href="../Favorites/favorites.html">
-          <button class="btn btn-danger fs-28 mt-5 rounded p-3">Favorites <i class="bi bi-heart"></i></button>
-      </a>
+       <a href="../Favorites/favorites.html">  
+  <button type="button" class="btn btn-outline-danger">
+      Favorites <i class="bi bi-heart"></i>
+  </button>
+</a>
+
       
         <script>
           document.getElementById('favoritesButton').addEventListener('click', function(e) {
@@ -92,7 +95,8 @@
             </i>
         </a>
 
-        <span onclick="window.open('https://booktown-4ix2.onrender.com/Cart/index.html')">
+        <span onclick="window.location.href='../Cart/index.html'">
+
             <button type="button" class="btn btn-outline-danger">
                 <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-bag-fill" viewBox="0 0 16 16">

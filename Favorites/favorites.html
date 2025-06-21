@@ -1,76 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Favorites</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 0 auto;
-      background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 20px auto;
     }
     th, td {
-      padding: 12px 15px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
+      border: 1px solid #ddd;
+      padding: 8px;
     }
     th {
-      background-color: #dc3545;
+      background: #dc3545;
       color: white;
-      text-transform: uppercase;
+      text-align: left;
     }
     tr:hover {
       background-color: #f1f1f1;
     }
-    .action-btn {
-      padding: 8px 12px;
-      background-color: #007BFF;
+    button.add-to-cart-btn {
+      background-color: #28a745;
       color: white;
       border: none;
+      padding: 6px 12px;
       border-radius: 4px;
-      text-decoration: none;
       cursor: pointer;
       transition: background-color 0.3s;
     }
-    .action-btn:hover {
-      background-color: #0056b3;
-    }
-    @media (max-width: 768px) {
-      table, thead, tbody, th, td, tr {
-        display: block;
-      }
-      thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-      }
-      tr {
-        margin-bottom: 1rem;
-      }
-      td {
-        border: none;
-        position: relative;
-        padding-left: 50%;
-      }
-      td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 15px;
-        font-weight: bold;
-      }
+    button.add-to-cart-btn:hover {
+      background-color: #218838;
     }
   </style>
 </head>
@@ -79,39 +41,77 @@
   <table>
     <thead>
       <tr>
+        <th>Cover</th>
         <th>Book Title</th>
-        <th>Author</th>
-        <th>Description</th>
+        <th>Price</th>
+        <th>Last Price</th>
         <th>Action</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td data-label="Book Title">Book One</td>
-        <td data-label="Author">Author A</td>
-        <td data-label="Description">A brief description of Book One.</td>
-        <td data-label="Action">
-          <a href="#" class="action-btn">View Details</a>
-        </td>
-      </tr>
-      <tr>
-        <td data-label="Book Title">Book Two</td>
-        <td data-label="Author">Author B</td>
-        <td data-label="Description">A brief description of Book Two.</td>
-        <td data-label="Action">
-          <a href="#" class="action-btn">View Details</a>
-        </td>
-      </tr>
-      <tr>
-        <td data-label="Book Title">Book Three</td>
-        <td data-label="Author">Author C</td>
-        <td data-label="Description">A brief description of Book Three.</td>
-        <td data-label="Action">
-          <a href="#" class="action-btn">View Details</a>
-        </td>
-      </tr>
+    <tbody id="favorites-tbody">
+      <!-- Favori kitaplar buraya JS ile eklenecek -->
     </tbody>
   </table>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tbody = document.getElementById("favorites-tbody");
+      const favoritesRaw = JSON.parse(localStorage.getItem("favorites")) || [];
+
+      // Geçersiz kayıtları filtrele
+      const favorites = favoritesRaw.filter(book =>
+        book && book.name && book.cover && book.price !== undefined && book.price !== null
+      );
+
+      if (favorites.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center;">No favorite books found.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = "";
+
+      favorites.forEach((book, index) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><img src="${book.cover}" alt="${book.name}" style="height: 80px;"/></td>
+          <td>${book.name}</td>
+          <td>${book.price}</td>
+          <td>${book.lastPrice || "-"}</td>
+          <td><button class="add-to-cart-btn" data-index="${index}">Add to Cart</button></td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Sepete ekleme işlemi
+      tbody.addEventListener("click", (e) => {
+        if (e.target.classList.contains("add-to-cart-btn")) {
+          const index = e.target.getAttribute("data-index");
+          const bookToAdd = favorites[index];
+
+          // Sepet datasını al veya boş dizi oluştur
+          let cartData = JSON.parse(localStorage.getItem("data")) || [];
+
+          // Sepette kitap zaten var mı kontrolü (isim bazlı)
+          const isAlreadyInCart = cartData.some(item => item.name === bookToAdd.name);
+          if (isAlreadyInCart) {
+            alert(`"${bookToAdd.name}" is already in your cart.`);
+            return;
+          }
+
+          // Sepete kitap ekle (adet=1)
+          cartData.push({
+            cover: bookToAdd.cover,
+            name: bookToAdd.name,
+            price: bookToAdd.price,
+            value: 1,
+            lastprice: bookToAdd.lastPrice || null,
+          });
+
+          localStorage.setItem("data", JSON.stringify(cartData));
+          alert(`"${bookToAdd.name}" has been added to your cart! 🛒`);
+        }
+      });
+    });
+  </script>
 </body>
 </html>

@@ -17,21 +17,25 @@ dropdownItems.forEach((el) => {
   getCartCount()
 export default function productMaker(bookData) {
   bookData.forEach((book) => {
-    main.innerHTML += `<div class="thumb-wrapper flex-column shadow">
-	<div class="img-box">
-		<img src="${book.cover}" class="img-fluid" alt="book cover">
-	</div>
-	<div class="thumb-content">
-		<h4 class="book-name">${book.name}</h4>
-		<div class="star-rating">
-			${book.stars}
-		</div>
-		<p class="item-price"><strike class="">${book.lastPrice || ""}</strike><b>$${
+    main.innerHTML += `<div class="thumb-wrapper flex-column shadow position-relative">
+  <div class="img-box position-relative">
+    <img src="${book.cover}" class="img-fluid" alt="book cover">
+    <button class="favorite-btn position-absolute top-0 end-0 m-2 btn btn-light">
+      <i class="bi bi-heart fs-5 text-danger"></i>
+    </button>
+  </div>
+  <div class="thumb-content">
+    <h4 class="book-name">${book.name}</h4>
+    <div class="star-rating">
+      ${book.stars}
+    </div>
+    <p class="item-price"><strike class="">${book.lastPrice || ""}</strike><b>$${
       book.price
     }</b></p>
-		<button class="btn btn-outline-danger"> Add to Cart <i class="bi bi-bag"></i></button>
-	</div>
-	</div>`;
+    <button class="btn btn-outline-danger"> Add to Cart <i class="bi bi-bag"></i></button>
+  </div>
+</div>`;
+
   });
 }
 
@@ -187,3 +191,32 @@ if (localStorage.getItem("data") == null) {
     cartCountid.innerHTML = cartCountList;
   }
 }
+// FAVORİLERE EKLEME
+let favoriteBooks = JSON.parse(localStorage.getItem("favorites")) || [];
+
+window.addEventListener("click", (e) => {
+  if (e.target.closest(".favorite-btn")) {
+    const bookCard = e.target.closest(".thumb-wrapper");
+
+    const favoriteBook = {
+      cover: bookCard.querySelector("img").src,
+      name: bookCard.querySelector(".book-name").innerText,
+      price: bookCard.querySelector(".item-price b").innerText.slice(1),
+      lastPrice: bookCard.querySelector(".item-price strike")?.innerText || null,
+    };
+
+    // Eğer daha önce eklenmediyse favorilere ekle
+    const isAlreadyFavorited = favoriteBooks.some(
+      (book) => book.name === favoriteBook.name
+    );
+
+    if (!isAlreadyFavorited) {
+      favoriteBooks.push(favoriteBook);
+      localStorage.setItem("favorites", JSON.stringify(favoriteBooks));
+      alert(`${favoriteBook.name} added to favorites!`);
+    } else {
+      alert(`${favoriteBook.name} is already in favorites!`);
+    }
+  }
+});
+
