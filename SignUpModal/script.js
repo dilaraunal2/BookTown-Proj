@@ -1,53 +1,42 @@
-(() => {
-  "use strict";
-  const forms = document.querySelectorAll(".needs-validation");
-  Array.from(forms).forEach((form) => {
-    form.addEventListener(
-      "submit",
-      (event) => {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add("was-validated");
-      },
-      false
-    );
-  });
-})();
+document.getElementById("signupForm").addEventListener("submit", function (event) {
+  event.preventDefault();
 
-// onsubmit section
+  const firstName = document.getElementById("firstName").value.trim();
+  const lastName = document.getElementById("lastName").value.trim();
+  const userName = document.getElementById("userName").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const city = document.getElementById("city").value.trim();
+  const address = document.getElementById("address").value.trim();
+  const termsCheck = document.getElementById("termsCheck").checked;
 
-const submitBtn = document.getElementById("submitBtn");
-const form = document.querySelector(".needs-validation");
+  if (!termsCheck) {
+    alert("Please accept the terms.");
+    return;
+  }
 
-submitBtn.addEventListener("click", (event) => {
-  userData = {
-    firtsName:
-      event.target.parentElement.parentElement.children[0].children[1].value,
-      lastName:
-      event.target.parentElement.parentElement.children[1].children[1].value,
-      userName:
-      event.target.parentElement.parentElement.children[2].children[1].value,
-      cityName:
-      event.target.parentElement.parentElement.children[3].children[1].value,
-      address:
-      event.target.parentElement.parentElement.children[4].children[1].value,
-      agreement:
-      event.target.parentElement.parentElement.children[5].children[0].children[0],
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+
+  const userExists = users.some(user => user.userName === userName);
+  if (userExists) {
+    alert("This username is already registered!");
+    return;
+  }
+
+  const newUser = {
+    firstName,
+    lastName,
+    userName,
+    password,
+    city,
+    address,
   };
 
-  localStorage.setItem("userData", JSON.stringify(userData));
+  users.push(newUser);
+  localStorage.setItem("users", JSON.stringify(users));
+
+  alert("Registration successful! You are being directed to the login page....");
+  window.location.href = "../LoginModel/login.html";
 });
-
-if (JSON.parse(localStorage.getItem("userData")).firtsName) {
-  form.innerHTML = `<div class="text-center w-100 h-100 d-flex align-items-center justify-content-center fs-2"><span>You have Successfully signed up ${JSON.parse(localStorage.getItem("userData")).firtsName} </span><i role="button" title="Edit Information" class="edit-btn btn btn-outline-danger bi bi-pencil-square m-2 px-3 fs-2 border-0"></i></div>`;
-  const editBtn = document.querySelector(".edit-btn");
-  editBtn.addEventListener("click", () => {
-    localStorage.removeItem("userData");
-    location.reload();
-  })
-  };
 
 
 

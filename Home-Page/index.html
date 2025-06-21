@@ -50,6 +50,16 @@
             <a href="../ProductsPage/LinkedHTMLs/best.html" target="_blank" role="button"
                 class="w-100 h-100 d-block spinner-border-sm bg-danger text-light border border-1 border-warning border-opacity-10"
                 rel="noopener noreferrer">Best Of BookTown</a>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+  <a class="navbar-brand" href="#">BookTown</a>
+  <div class="ms-auto">
+    <a href="../loginModal/login.html" class="btn btn-outline-danger">Login</a>
+  </div>
+</nav>
+
+
+
+
         </li>
         <li id="categorieSelector" class="close-list-btn categorie flex-grow-1 fs-18 text-center w-100">
             <a role="button"
@@ -93,15 +103,14 @@
                 Purchase
             </button>
         </span>
-        <a class="link" href="../../SignUpModal/index.html" target="_blank" rel="noopener noreferrer">
-            <button type="button" class="btn btn-outline-danger">
-                <svg class="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                </svg>
-                Profile
-            </button>
-        </a>
+        <a href="../LoginModel/login.html">  
+          <button type="button" class="btn btn-outline-danger">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              Profile
+          </button>
+      </a>
         <i role="button" class="bi bi-list fs-32 ps-2 d-block d-sm-none"></i>
     </div>
       </div>
@@ -645,6 +654,28 @@
     crossorigin="anonymous"></script>
   <script type="module" src="../JS/app.js"></script>
   <script type="module" src="./script.js"></script>
+
+  <script>
+    // Sayfa yüklendiğinde çalışacak kodlar
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+      const welcomeMessage = document.getElementById("welcomeMessage");
+      const logoutBtn = document.getElementById("logoutBtn");
+  
+      // Eğer giriş yapılmışsa
+      if (currentUser) {
+        welcomeMessage.textContent = `Hoş geldin, ${currentUser.firstName}!`;
+        welcomeMessage.classList.remove("d-none"); // Bootstrap'le gizliyse göster
+        logoutBtn.classList.remove("d-none");
+  
+        // Çıkış butonu işlevi
+        logoutBtn.addEventListener("click", function() {
+          localStorage.removeItem("currentUser");
+          window.location.reload(); // Sayfayı yenile
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
