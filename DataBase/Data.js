@@ -9,18 +9,18 @@ export default function books() {
       categorie: ["novel", "philosophy"],
       gone: false,
       rating: 3.5,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-half text-warning"></i>
-          <i class="bi bi-star text-warning"></i>
-        </div>`,
-      caption: "A psychological thriller by Colleen Hoover. The book blends suspense, romance, and dark secrets in a gripping storyline.",
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-half text-warning\"></i>
+              <i class=\"bi bi-star text-warning\"></i>
+              </div>`,
+      caption: "A psychological thriller by Colleen Hoover that blurs the line between truth and fiction.",
       comments: [
-        "Absolutely thrilling, couldn't put it down!",
-        "The plot twists were unexpected and chilling.",
-        "A bit disturbing, but incredibly well written."
+        "Absolutely gripping from start to finish.",
+        "Disturbing but incredibly well written.",
+        "Left me questioning everything by the end."
       ]
     },
     {
@@ -32,18 +32,18 @@ export default function books() {
       categorie: ["novel"],
       gone: false,
       rating: 4,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star text-warning"></i>
-        </div>`,
-      caption: "The sequel to 'It Ends with Us' continues Lily and Atlas's story, focusing on healing and second chances.",
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star text-warning\"></i>
+              </div>`,
+      caption: "The sequel to 'It Ends with Us', continuing the emotional journey of Lily and Atlas.",
       comments: [
-        "Beautiful continuation of Lily’s story!",
-        "Colleen Hoover never disappoints.",
-        "I cried, I smiled, I loved it."
+        "Even better than the first one!",
+        "Colleen never disappoints.",
+        "Heartfelt and healing."
       ]
     },
     {
@@ -55,18 +55,18 @@ export default function books() {
       categorie: ["novel"],
       gone: false,
       rating: 4.5,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-half text-warning"></i>
-        </div>`,
-      caption: "An emotionally powerful novel about love, domestic violence, and self-worth. A reader favorite from Colleen Hoover.",
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-half text-warning\"></i>
+              </div>`,
+      caption: "A deeply personal story about love, strength, and the hard choices we make.",
       comments: [
-        "Heartbreaking and inspiring.",
-        "Real and raw portrayal of love and pain.",
-        "A book every woman should read."
+        "Powerful and emotional read.",
+        "Gave me a new perspective on relationships.",
+        "Realistic, raw, and beautifully written."
       ]
     },
     {
@@ -78,18 +78,18 @@ export default function books() {
       categorie: ["novel"],
       gone: false,
       rating: 4.5,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-half text-warning"></i>
-        </div>`,
-      caption: "A steamy romance novel that explores the complexity of love and the pain of letting go.",
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-half text-warning\"></i>
+              </div>`,
+      caption: "A novel about love with no strings attached that eventually gets messy.",
       comments: [
-        "Sexy and tragic – Hoover at her best!",
-        "Couldn’t stop thinking about it after finishing.",
-        "The emotional build-up was brilliant."
+        "Intense and beautiful love story.",
+        "Couldn’t put it down.",
+        "So emotional and heartbreaking."
       ]
     },
     {
@@ -101,18 +101,18 @@ export default function books() {
       categorie: ["novel"],
       gone: false,
       rating: 4.5,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-half text-warning"></i>
-        </div>`,
-      caption: "Stephen King’s imaginative fantasy tale filled with mystery and magical adventure.",
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-half text-warning\"></i>
+              </div>`,
+      caption: "Stephen King’s modern fairy tale with elements of horror and adventure.",
       comments: [
-        "Classic King, but with a fantasy twist!",
-        "A beautiful escape into a dark fairytale world.",
-        "Creative and unpredictable plot."
+        "Classic King storytelling.",
+        "A dark twist on classic fantasy.",
+        "Magical and disturbing in the best way."
       ]
     },
     {
@@ -124,18 +124,18 @@ export default function books() {
       categorie: ["novel", "philosophy"],
       gone: false,
       rating: 4.5,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-half text-warning"></i>
-        </div>`,
-      caption: "A heartfelt story of redemption and motherhood after prison, told with emotional depth.",
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-half text-warning\"></i>
+              </div>`,
+      caption: "A woman’s journey to reconnect with her daughter and seek redemption.",
       comments: [
-        "Such a strong female lead!",
-        "Tears guaranteed while reading.",
-        "Touching and full of hope."
+        "Heartwarming and gut-wrenching.",
+        "Full of emotion and hope.",
+        "This story stayed with me."
       ]
     },
     {
@@ -147,18 +147,18 @@ export default function books() {
       categorie: ["novel"],
       gone: false,
       rating: 5,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-        </div>`,
-      caption: "Jennette McCurdy’s brutally honest and darkly humorous memoir about child stardom and trauma.",
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              </div>`,
+      caption: "Jennette McCurdy’s raw memoir about childhood stardom and toxic parenting.",
       comments: [
-        "Raw and incredibly brave.",
-        "A must-read memoir for healing.",
-        "She told the truth and it hurts."
+        "Bold and honest.",
+        "Heartbreaking and empowering.",
+        "So much courage in these pages."
       ]
     },
     {
@@ -170,18 +170,18 @@ export default function books() {
       categorie: ["novel"],
       gone: false,
       rating: 5,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-        </div>`,
-      caption: "A coming-of-age murder mystery set in the marshes of North Carolina. Beautiful and haunting.",
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              </div>`,
+      caption: "A lyrical mystery and coming-of-age story set in the marshes of North Carolina.",
       comments: [
-        "So lyrical and atmospheric!",
-        "Kya is an unforgettable character.",
-        "Masterpiece – deserves the hype."
+        "Poetic and powerful.",
+        "One of the best books I've ever read.",
+        "Emotionally gripping and visually vivid."
       ]
     },
     {
@@ -193,18 +193,18 @@ export default function books() {
       categorie: ["self-dev"],
       gone: false,
       rating: 5,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-        </div>`,
-      caption: "James Clear explains how tiny changes lead to remarkable results. A must-read for building strong habits.",
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              </div>`,
+      caption: "A guide to building better habits and breaking bad ones using proven techniques.",
       comments: [
-        "Changed my life in a week!",
-        "Clear, simple and actionable.",
-        "Great for productivity and discipline."
+        "Changed my daily routine completely.",
+        "Super practical and easy to follow.",
+        "James Clear is brilliant."
       ]
     },
     {
@@ -216,522 +216,767 @@ export default function books() {
       categorie: ["novel"],
       gone: false,
       rating: 4.5,
-      stars: `<div class="ratings">
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-fill text-warning"></i>
-          <i class="bi bi-star-half text-warning"></i>
+      stars: `<div class=\"ratings\">
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-fill text-warning\"></i>
+              <i class=\"bi bi-star-half text-warning\"></i>
+              </div>`,
+      caption: "A young boy’s powerful journey from El Salvador to the United States.",
+      comments: [
+        "Touching and eye-opening.",
+        "Beautifully written memoir.",
+        "Raw and inspiring."
+      ]
+    }
+  ];
+}
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/61xkvfPVupL._AC_UL226_SR226,226_.jpg",
+  name: "November 9: A Novel",
+  price: "11.44",
+  date: 11,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
         </div>`,
-      caption: "A powerful memoir about a young boy’s dangerous journey from El Salvador to the U.S. in search of his family.",
-      comments: [
-        "So moving and emotional.",
-        "Vivid storytelling – felt like I was there.",
-        "Important story for our time."
-      ]
-    }
-  ];
+  caption: "A powerful and emotional love story that unfolds over annual meetings on November 9.",
+  comments: [
+    "Absolutely loved the chemistry between the characters.",
+    "The ending was unexpected and beautiful.",
+    "Colleen Hoover never disappoints!"
+]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/61NdJMwAThS._AC_UL226_SR226,226_.jpg",
+  name: "The Body Keeps the Score",
+  price: "11.40",
+  date: 12,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        </div>`,
+  caption: "A landmark book on trauma and its impact on both the mind and body.",
+  comments: [
+    "Essential reading for understanding trauma.",
+    "Life-changing insights.",
+    "This book helped me start my healing journey."
+]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/91cqEsyjd-L._AC_UL226_SR226,226_.jpg",
+  name: "The Very Hungry Caterpillar",
+  price: "4.30",
+  date: 13,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        </div>`,
+  caption: "A beloved children’s book about a caterpillar’s transformation into a butterfly.",
+  comments: [
+    "Perfect bedtime story.",
+    "My child asks for this every night.",
+    "Beautiful illustrations and simple story."
+]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/81spBNattuL._AC_UL226_SR226,226_.jpg",
+  name: "Dinner in One",
+  price: "24.99",
+  date: 14,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 3.5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        <i class="bi bi-star text-warning"></i>
+        </div>`,
+  caption: "A cookbook filled with easy one-pot meals perfect for busy weeknights.",
+  comments: [
+    "Some recipes are great, others a bit bland.",
+    "Love how simple the instructions are.",
+    "Great for beginners."
+]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/61uiYWcEQGL._AC_UL226_SR226,226_.jpg",
+  name: "The Return of the Gods",
+  price: "18.29",
+  date: 15,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        </div>`,
+  caption: "An exploration of ancient myths and how they might be influencing modern times.",
+  comments: [
+    "Thought-provoking and controversial.",
+    "Very deep and symbolic.",
+    "A bit intense but fascinating."
+]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/71aG+xDKSYL._AC_UL226_SR226,226_.jpg",
+  name: "The 48 Laws of Power",
+  price: "11.60",
+  date: 16,
+  deal: false,
+  categorie: ["self-dev", "philosophy"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        </div>`,
+  caption: "A guide to understanding power dynamics and strategy through history.",
+  comments: [
+    "Not for the faint of heart.",
+    "Gives you a different perspective on influence.",
+    "Very Machiavellian but intriguing."
+]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/81hHy5XrdKL._AC_UL226_SR226,226_.jpg",
+  name: "The Four Agreements",
+  price: "7.74",
+  date: 17,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        </div>`,
+  caption: "A spiritual guide to personal freedom and happiness through four simple principles.",
+  comments: [
+    "Simple yet powerful.",
+    "Helped me change my mindset.",
+    "I reread this book every year."
+]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/81XQ1+piiiL._AC_UL226_SR226,226_.jpg",
+  name: "All Good People Here: A Novel",
+  price: "18.51",
+  date: 18,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        </div>`,
+  caption: "A gripping mystery about a journalist returning home to uncover long-hidden secrets.",
+  comments: [
+    "Couldn’t put it down.",
+    "A few twists I didn’t see coming.",
+    "Loved the small-town setting."
+]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL226_SR226,226_.jpg",
+  name: "I Love You to the Moon and Back",
+  price: "4.31",
+  date: 19,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        </div>`,
+  caption: "A heartwarming story about the love between parent and child.",
+  comments: [
+    "So sweet and emotional.",
+    "Perfect baby shower gift.",
+    "Makes me cry every time."
+]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/91Iuhbh7aIL._AC_UL226_SR226,226_.jpg",
+  name: "The Final Gambit",
+  price: "14.11",
+  date: 20,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        </div>`,
+  caption: "The thrilling conclusion to the Inheritance Games trilogy full of puzzles and secrets.",
+  comments: [
+    "What an ending!",
+    "Best book of the series.",
+    "I loved every twist."
+]
 }
-export default function books() {
-  return [
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/61NdJMwAThS._AC_UL226_SR226,226_.jpg",
-      name: "The Body Keeps the Score",
-      price: "11.40",
-      date: 12,
-      deal: false,
-      categorie: ["novel"],
-      gone: false,
-      rating: 5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/81EVdWdmOKL._AC_UL226_SR226,226_.jpg",
+  name: "Brown Bear, Brown Bear, What Do You See?",
+  price: "4.55",
+  date: 21,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
       </div>`,
-      caption: "A groundbreaking book on trauma and how it reshapes both body and brain, offering hope for healing.",
-      comments: [
-        "Essential reading for trauma recovery.",
-        "Eye-opening and incredibly informative.",
-        "Helped me understand my anxiety better."
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/91cqEsyjd-L._AC_UL226_SR226,226_.jpg",
-      name: "The Very Hungry Caterpillar",
-      price: "4.30",
-      date: 13,
-      deal: false,
-      categorie: ["novel"],
-      gone: false,
-      rating: 5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
+  caption: "A colorful picture book that teaches kids about animals and repetition.",
+  comments: [
+    "A classic favorite in our home.",
+    "Kids love the rhythm and visuals!",
+    "My toddler reads along with me!"
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/81qROMFiwmL._AC_UL226_SR226,226_.jpg",
+  name: "Little Blue Truck's Halloween",
+  price: "6.32",
+  date: 22,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
       </div>`,
-      caption: "A classic children’s picture book that teaches days of the week, counting, and metamorphosis through charming illustrations.",
-      comments: [
-        "My kids adore it!",
-        "Timeless and educational.",
-        "Perfect bedtime story."
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/81spBNattuL._AC_UL226_SR226,226_.jpg",
-      name: "Dinner in One",
-      price: "24.99",
-      date: 14,
-      deal: false,
-      categorie: ["novel"],
-      gone: false,
-      rating: 3.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-        <i class="bi bi-star text-warning"></i>
+  caption: "A festive Halloween-themed book featuring Little Blue Truck and friends.",
+  comments: [
+    "Perfect Halloween gift!",
+    "My son giggles at every page.",
+    "Sturdy flaps and fun artwork."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/61kPERVIR4L._AC_UL226_SR226,226_.jpg",
+  name: "Confess: A Novel",
+  price: "11.43",
+  date: 23,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-half text-warning"></i>
       </div>`,
-      caption: "A cookbook packed with flavorful, nutritious meals that can be made in a single pot or pan.",
-      comments: [
-        "Quick and easy recipes!",
-        "Some lacked flavor, but many were great.",
-        "Saves so much time after work."
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/61uiYWcEQGL._AC_UL226_SR226,226_.jpg",
-      name: "The Return of the Gods",
-      price: "18.29",
-      date: 15,
-      deal: false,
-      categorie: ["novel"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
+  caption: "A love story shaped by secrets, art, and redemption.",
+  comments: [
+    "Emotional and raw.",
+    "The confessions made this so unique.",
+    "I cried and smiled the whole way through."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/61Bdp7XZhDL._AC_UL226_SR226,226_.jpg",
+  name: "The Silent Patient",
+  price: "11.91",
+  date: 24,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-half text-warning"></i>
       </div>`,
-      caption: "A provocative exploration of spiritual forces in modern society, drawing from ancient mythology and current events.",
-      comments: [
-        "Deep and thought-provoking.",
-        "Makes you see the world differently.",
-        "Spiritual but also historical."
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/71aG+xDKSYL._AC_UL226_SR226,226_.jpg",
-      name: "The 48 Laws of Power",
-      price: "11.60",
-      date: 16,
-      deal: false,
-      categorie: ["self-dev", "philosophy"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
+  caption: "A gripping psychological thriller with a shocking twist.",
+  comments: [
+    "I didn’t see that twist coming!",
+    "So clever and addictive.",
+    "Brilliantly written and well-paced."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/91Yy9b1PseL._AC_UL226_SR226,226_.jpg",
+  name: "Danielle Walker's Healthy in a Hurry",
+  price: "24.99",
+  date: 25,
+  deal: false,
+  categorie: ["self-dev"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
       </div>`,
-      caption: "Robert Greene outlines the most influential and controversial strategies for achieving power in personal and professional life.",
-      comments: [
-        "Eye-opening and brutal!",
-        "Feels manipulative, but very insightful.",
-        "Learned a lot about human nature."
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/81hHy5XrdKL._AC_UL226_SR226,226_.jpg",
-      name: "The Four Agreements",
-      price: "7.74",
-      date: 17,
-      deal: false,
-      categorie: ["novel"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
+  caption: "Fast, healthy, and delicious meals from a bestselling paleo food blogger.",
+  comments: [
+    "Quick and easy recipes!",
+    "My family actually eats the healthy food now.",
+    "So many gluten-free options."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/61clZgj1xZL._AC_UL226_SR226,226_.jpg",
+  name: "The Great Reset",
+  price: "22.75",
+  date: 26,
+  deal: false,
+  categorie: ["self-dev", "philosophy"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
       </div>`,
-      caption: "Don Miguel Ruiz offers a powerful code of conduct based on ancient Toltec wisdom for achieving freedom and happiness.",
-      comments: [
-        "Short but life-changing!",
-        "Great reminders for daily life.",
-        "Spiritual and practical."
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/81XQ1+piiiL._AC_UL226_SR226,226_.jpg",
-      name: "All Good People Here: A Novel",
-      price: "18.51",
-      date: 18,
-      deal: false,
-      categorie: ["novel"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
+  caption: "An analysis of economic trends and global policy shifts post-pandemic.",
+  comments: [
+    "Eye-opening and bold.",
+    "Makes you question the future.",
+    "Timely and controversial."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/81I2+bgGMTL._AC_UL226_SR226,226_.jpg",
+  name: "Battle for the American Mind",
+  price: "17.99",
+  date: 27,
+  deal: false,
+  categorie: ["self-dev"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
       </div>`,
-      caption: "A gripping crime thriller exploring small-town secrets and a decades-old murder mystery.",
-      comments: [
-        "Couldn’t put it down!",
-        "Full of twists and great pacing.",
-        "Reminded me of true crime podcasts."
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL226_SR226,226_.jpg",
-      name: "I Love You to the Moon and Back",
-      price: "4.31",
-      date: 19,
-      deal: false,
-      categorie: ["novel"],
-      gone: false,
-      rating: 5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
+  caption: "A provocative look at education and its impact on American culture.",
+  comments: [
+    "Powerful message.",
+    "Challenged my views on education.",
+    "Very engaging read."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/81xT2mdyL7L._AC_UL226_SR226,226_.jpg",
+  name: "I Love You Like No Otter",
+  price: "5.37",
+  date: 28,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
       </div>`,
-      caption: "A sweet and gentle rhyming bedtime book celebrating the love between a parent and child.",
-      comments: [
-        "Perfect for bedtime snuggles.",
-        "So heartwarming and cute!",
-        "My toddler loves it every night."
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/91Iuhbh7aIL._AC_UL226_SR226,226_.jpg",
-      name: "The Final Gambit",
-      price: "14.11",
-      date: 20,
-      deal: false,
-      categorie: ["novel"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
+  caption: "A pun-filled children's book celebrating love and adorable animals.",
+  comments: [
+    "So cute and funny!",
+    "Perfect for Valentine’s Day.",
+    "Kids love the animal puns."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/71lwvQIGI8L._AC_UL226_SR226,226_.jpg",
+  name: "The Return",
+  price: "17.38",
+  date: 29,
+  deal: false,
+  categorie: ["self-devl"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-half text-warning"></i>
       </div>`,
-      caption: "The thrilling conclusion to 'The Inheritance Games' series filled with puzzles, riddles, and high-stakes drama.",
-      comments: [
-        "A fantastic ending to the trilogy!",
-        "So much suspense and mystery.",
-        "Loved the twist at the end!"
-      ]
-    }
-  ];
+  caption: "A story about loss, healing, and rediscovering love after grief.",
+  comments: [
+    "Emotional and deep.",
+    "Tore at my heartstrings.",
+    "Nicholas Sparks does it again."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/81823bTjKHL._AC_UL226_SR226,226_.jpg",
+  name: "The Last Thing He Told Me: A Novel",
+  price: "13.09",
+  date: 30,
+  deal: false,
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-fill text-warning"></i>
+      <i class="bi bi-star-half text-warning"></i>
+      </div>`,
+  caption: "A suspenseful story about a woman’s search for the truth after her husband disappears.",
+  comments: [
+    "Great plot twists!",
+    "Fast-paced and smart.",
+    "I couldn’t stop reading."
+  ]
 }
-export default function books() {
-  return [
-    {
-      cover: "https://m.media-amazon.com/images/I/51U0RLLU7vS._AC_UF226,226_FMjpg_.jpg",
-      name: "The Art of War",
-      price: "13.58",
-      date: 31,
-      deal: true,
-      lastPrice: "$16.99",
-      categorie: ["novel", "philosophy"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-      </div>`,
-      caption: "Ancient military strategy classic by Sun Tzu, applicable beyond war into business and leadership.",
-      comments: [
-        "Timeless wisdom for all leaders.",
-        "Changed how I approach conflict.",
-        "Highly recommend for strategists."
-      ]
-    },
-    {
-      cover: "https://m.media-amazon.com/images/I/51lhjx1Qw3L._AC_UF226,226_FMjpg_.jpg",
-      name: "Behave: The Biology of Humans",
-      price: "15.87",
-      date: 32,
-      deal: true,
-      lastPrice: "$18.09",
-      categorie: ["self-dev", "philosophy"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-      </div>`,
-      caption: "Robert Sapolsky explores the neuroscience and biology behind human behavior in depth.",
-      comments: [
-        "Dense but fascinating read.",
-        "Insightful on why we act the way we do.",
-        "A must-read for psychology lovers."
-      ]
-    },
-    {
-      cover: "https://m.media-amazon.com/images/I/41Byw-nqa3L._AC_UF226,226_FMjpg_.jpg",
-      name: "The 21 Irrefutable Laws of Leadership",
-      price: "21.49",
-      date: 33,
-      deal: true,
-      lastPrice: "$18.49",
-      categorie: ["self-dev"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-      </div>`,
-      caption: "John Maxwell’s leadership principles for developing influence and effectiveness.",
-      comments: [
-        "Practical and inspiring.",
-        "Helped me grow as a manager.",
-        "Clear examples for all leaders."
-      ]
-    },
-    {
-      cover: "https://m.media-amazon.com/images/I/51lIUQSVCsL._AC_UF226,226_FMjpg_.jpg",
-      name: "X-Men Omnibus",
-      price: "34.99",
-      date: 34,
-      deal: true,
-      lastPrice: "$48.16",
-      categorie: ["novel"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-      </div>`,
-      caption: "A comprehensive collection of classic X-Men comics packed with action and heroism.",
-      comments: [
-        "Perfect for any Marvel fan!",
-        "Beautiful artwork and stories.",
-        "A great addition to my comic collection."
-      ]
-    },
-    {
-      cover: "https://m.media-amazon.com/images/I/41S21miKn1S._AC_UF226,226_FMjpg_.jpg",
-      name: "Close Your Eyes, Sleep",
-      price: "13.59",
-      date: 35,
-      deal: true,
-      lastPrice: "$34.40",
-      categorie: ["novel"],
-      gone: false,
-      rating: 3.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-        <i class="bi bi-star text-warning"></i>
-      </div>`,
-      caption: "A gripping thriller exploring the darkness behind closed doors and the power of silence.",
-      comments: [
-        "Good suspense but a bit slow.",
-        "The ending was unexpected.",
-        "Keeps you engaged overall."
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/51CCYukH2nL._AC_SR226,226_.jpg",
-      name: "JoJo's Bizarre Adventure",
-      price: "15.30",
-      date: 36,
-      deal: true,
-      lastPrice: "$19.61",
-      categorie: ["novel"],
-      gone: false,
-      rating: 5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-      </div>`,
-      caption: "A wildly imaginative and stylish manga series full of epic battles and quirky characters.",
-      comments: [
-        "Iconic art style and story.",
-        "One of the best manga out there.",
-        "Highly addictive and fun!"
-      ]
-    },
-    {
-      cover: "https://images-na.ssl-images-amazon.com/images/I/41ovZVriMRL._AC_SR226,226_.jpg",
-      name: "Marx for Beginners",
-      price: "14.50",
-      date: 37,
-      deal: true,
-      lastPrice: "$17.00",
-      categorie: ["self-dev", "philosophy"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-      </div>`,
-      caption: "An accessible introduction to Karl Marx’s ideas through engaging graphics and straightforward explanations.",
-      comments: [
-        "Easy to understand complex ideas.",
-        "Great for beginners.",
-        "Well illustrated and concise."
-      ]
-    },
-    {
-      cover: "https://m.media-amazon.com/images/I/51hIRYMlt6L._AC_UF226,226_FMjpg_.jpg",
-      name: "The System",
-      price: "11.99",
-      date: 38,
-      deal: true,
-      lastPrice: "$13.01",
-      categorie: ["novel"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-      </div>`,
-      caption: "A compelling story about the hidden structures and networks that shape society.",
-      comments: [
-        "Thought-provoking and gripping.",
-        "Made me rethink systems around us.",
-        "Well-written and insightful."
-      ]
-    },
-    {
-      cover: "https://m.media-amazon.com/images/I/51phGHo7TmL._AC_UF226,226_FMjpg_.jpg",
-      name: "Reluctantly Home",
-      price: "10.99",
-      date: 39,
-      deal: true,
-      lastPrice: "$14.99",
-      categorie: ["self-dev"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-      </div>`,
-      caption: "An inspiring memoir about returning home and finding peace with the past.",
-      comments: [
-        "Emotional and honest.",
-        "Very relatable journey.",
-        "A beautiful story of healing."
-      ]
-    },
-    {
-      cover: "https://m.media-amazon.com/images/I/51Fd-5fMDOL._AC_UF226,226_FMjpg_.jpg",
-      name: "The Recipe for Hope",
-      price: "14.99",
-      date: 40,
-      deal: true,
-      lastPrice: "$14.99",
-      categorie: ["novel"],
-      gone: false,
-      rating: 4.5,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-half text-warning"></i>
-      </div>`,
-      caption: "A heartfelt novel about finding hope and healing through unexpected connections.",
-      comments: [
-        "Uplifting and heartwarming.",
-        "Great characters and story.",
-        "Highly recommended."
-      ]
-    },
-    {
-      cover: "https://m.media-amazon.com/images/I/41x3-s3mZFL._AC_UF226,226_FMjpg_.jpg",
-      name: "Doctor Ice Pick",
-      price: "5.49",
-      date: 41,
-      deal: true,
-      lastPrice: "$9.49",
-      categorie: ["novel"],
-      gone: false,
-      rating: 4,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star text-warning"></i>
-      </div>`,
-      caption: "A gripping medical thriller filled with suspense, danger, and unexpected twists.",
-      comments: [
-        "Fast-paced and exciting.",
-        "Kept me on the edge of my seat.",
-        "Some parts felt rushed though."
-      ]
-    },
-    {
-      cover: "https://m.media-amazon.com/images/I/51wssaiGMIL._AC_UF226,226_FMjpg_.jpg",
-      name: "Layla",
-      price: "8.97",
-      date: 42,
-      deal: true,
-      lastPrice: "$14.99",
-      categorie: ["novel"],
-      gone: false,
-      rating: 4,
-      stars: `<div class="ratings">
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star-fill text-warning"></i>
-        <i class="bi bi-star text-warning"></i>
-      </div>`,
-      caption: "A modern romance exploring love, secrets, and self-discovery.",
-      comments: [
-        "Emotional rollercoaster.",
-        "Loved the characters.",
-        "Some clichés but enjoyable."
-      ]
-    }
-  ];
+{
+  cover: "https://m.media-amazon.com/images/I/51U0RLLU7vS._AC_UF226,226_FMjpg_.jpg",
+  name: "The Art of War",
+  price: "13.58",
+  date: 31,
+  deal: true,
+  lastPrice: "$16.99",
+  categorie: ["novel", "philosophy"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-half text-warning"></i>
+  </div>`,
+  caption: "An ancient Chinese military treatise offering timeless strategies for conflict and leadership.",
+  comments: [
+    "Brilliant advice for life and business.",
+    "A must-read classic.",
+    "Simple but powerful lessons."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51lhjx1Qw3L._AC_UF226,226_FMjpg_.jpg",
+  name: "Behave: The Biology of Humans",
+  price: "15.87",
+  date: 32,
+  deal: true,
+  lastPrice: "$18.09",
+  categorie: ["self-dev", "philosophy"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-half text-warning"></i>
+  </div>`,
+  caption: "Explores the science behind human behavior, from brain biology to social dynamics.",
+  comments: [
+    "Incredibly deep and insightful.",
+    "Not an easy read but worth it.",
+    "Makes you rethink what it means to be human."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/41Byw-nqa3L._AC_UF226,226_FMjpg_.jpg",
+  name: "The 21 Irrefutable Laws of Leadership",
+  price: "21.49",
+  date: 33,
+  deal: true,
+  lastPrice: "$18.49",
+  categorie: ["self-dev"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-half text-warning"></i>
+  </div>`,
+  caption: "John C. Maxwell outlines essential principles for becoming an effective leader.",
+  comments: [
+    "Essential read for managers.",
+    "Clear and motivational.",
+    "Each chapter is full of wisdom."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51lIUQSVCsL._AC_UF226,226_FMjpg_.jpg",
+  name: "X-Men Omnibus",
+  price: "34.99",
+  date: 34,
+  deal: true,
+  lastPrice: "$48.16",
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-half text-warning"></i>
+  </div>`,
+  caption: "A must-have collection for Marvel fans, featuring classic X-Men storylines.",
+  comments: [
+    "Amazing art and story.",
+    "Takes me back to childhood!",
+    "A real collector’s item."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/41S21miKn1S._AC_UF226,226_FMjpg_.jpg",
+  name: "Close Your Eyes, Sleep",
+  price: "13.59",
+  date: 35,
+  deal: true,
+  lastPrice: "$34.40",
+  categorie: ["novel"],
+  gone: false,
+  rating: 3.5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-half text-warning"></i>
+    <i class="bi bi-star text-warning"></i>
+  </div>`,
+  caption: "A haunting psychological thriller that blurs dreams and reality.",
+  comments: [
+    "Creepy but intriguing.",
+    "Interesting concept but slow in parts.",
+    "Kept me awake at night!"
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/51CCYukH2nL._AC_SR226,226_.jpg",
+  name: "JoJo's Bizarre Adventure",
+  price: "15.30",
+  date: 36,
+  deal: true,
+  lastPrice: "$19.61",
+  categorie: ["novel"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+  </div>`,
+  caption: "A popular manga series with action, humor, and unforgettable characters.",
+  comments: [
+    "JoJo fans will love this!",
+    "The artwork is stunning.",
+    "A wild and fun ride!"
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/41ovZVriMRL._AC_SR226,226_.jpg",
+  name: "Marx for Beginners",
+  price: "14.50",
+  date: 37,
+  deal: true,
+  lastPrice: "$17.00",
+  categorie: ["self-dev", "philosophy"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-half text-warning"></i>
+  </div>`,
+  caption: "An illustrated introduction to Karl Marx’s life, ideas, and influence.",
+  comments: [
+    "A simple way to understand Marxism.",
+    "Funny and informative.",
+    "Loved the cartoon style."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51hIRYMlt6L._AC_UF226,226_FMjpg_.jpg",
+  name: "The System",
+  price: "11.99",
+  date: 38,
+  deal: true,
+  lastPrice: "$13.01",
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-half text-warning"></i>
+  </div>`,
+  caption: "A gritty and fast-paced crime drama set in the heart of the justice system.",
+  comments: [
+    "Gritty and realistic!",
+    "Couldn't stop reading.",
+    "Reminds me of true crime series."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51phGHo7TmL._AC_UF226,226_FMjpg_.jpg",
+  name: "Reluctantly Home",
+  price: "10.99",
+  date: 39,
+  deal: true,
+  lastPrice: "$14.99",
+  categorie: ["self-dev"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-half text-warning"></i>
+  </div>`,
+  caption: "A heartfelt journey of healing, hope, and coming home after hardship.",
+  comments: [
+    "Very emotional story.",
+    "A warm, uplifting novel.",
+    "Tears and smiles throughout."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51Fd-5fMDOL._AC_UF226,226_FMjpg_.jpg",
+  name: "The Recipe for Hope",
+  price: "14.99",
+  date: 40,
+  deal: true,
+  lastPrice: "$14.99",
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-half text-warning"></i>
+  </div>`,
+  caption: "A moving story about love, faith, and second chances in a small town.",
+  comments: [
+    "Full of heart and warmth.",
+    "Beautifully written!",
+    "Like a cozy hug in book form."
+  ]
+}
+{
+  cover: "https://m.media-amazon.com/images/I/41x3-s3mZFL._AC_UF226,226_FMjpg_.jpg",
+  name: "Doctor Ice Pick",
+  price: "5.49",
+  date: 41,
+  deal: true,
+  lastPrice: "$9.49",
+  categorie: ["novel"],
+  gone: false,
+  rating: 4,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star text-warning"></i>
+  </div>`,
+  caption: "A gripping thriller inspired by dark medical history and chilling psychological themes.",
+  comments: [
+    "Chilling and intense!",
+    "Disturbing but fascinating.",
+    "Perfect for fans of true crime fiction."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51wssaiGMIL._AC_UF226,226_FMjpg_.jpg",
+  name: "Layla",
+  price: "8.97",
+  date: 42,
+  deal: true,
+  lastPrice: "$14.99",
+  categorie: ["novel"],
+  gone: false,
+  rating: 4,
+  stars: `<div class="ratings">
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star-fill text-warning"></i>
+    <i class="bi bi-star text-warning"></i>
+  </div>`,
+  caption: "A supernatural romance full of mystery, heartbreak, and unexpected twists.",
+  comments: [
+    "Beautiful and haunting.",
+    "Another hit by Colleen Hoover.",
+    "Couldn’t put it down!"
+  ]
 }
