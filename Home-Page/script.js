@@ -11,7 +11,8 @@ const newestBookFiltred2 = books().filter(book => book.date <= 8 && book.date > 
 const newestBookFiltred3 = books().filter(book => book.date <= 12 && book.date > 8);
 
 function cartCreator(book) {
-    return `<div class="col-lg-3 col-sm-6">
+  return `
+  <div class="col-lg-3 col-sm-6">
     <div class="thumb-wrapper">
       <div class="img-box">
         <img src="${book.cover}" class="img-fluid" alt="book img">
@@ -20,14 +21,56 @@ function cartCreator(book) {
         <h4 class="book-name">${book.name}</h4>
         ${book.stars}
         <p class="item-price"><strike>${book.lastPrice || ""}</strike><b>$${book.price}</b></p>
+        ${book.summary ? `<p class="book-summary">${book.summary}</p>` : ""}
+        ${
+          book.comments
+            ? `<div class="book-comments">
+                <h6>Comments:</h6>
+                <ul>
+                  ${book.comments.map(comment => `<li>${comment}</li>`).join("")}
+                </ul>
+              </div>`
+            : ""
+        }
         <div class="d-flex justify-content-between gap-2">
           <button class="btn btn-outline-danger">Add to Cart <i class="bi bi-bag"></i></button>
           <button class="btn btn-outline-primary favorite-btn" data-id="${book.id}">♡ Add to Favorites</button>
         </div>
       </div>
     </div>
-    </div>`;
+  </div>
+  `;
 }
+window.addEventListener("click", (e) => {
+  let favoriteBooks = JSON.parse(localStorage.getItem("favorites")) || [];
+  
+  const btn = e.target.closest(".favorite-btn");
+  if (!btn) return;
+  
+  const bookCard = btn.closest(".thumb-wrapper");
+  if (!bookCard) return;
+  
+  const favoriteBook = {
+    cover: bookCard.querySelector("img").src,
+    name: bookCard.querySelector(".book-name").innerText,
+    price: bookCard.querySelector(".item-price b").innerText.slice(1),
+    lastPrice: bookCard.querySelector(".item-price strike")?.innerText || null,
+  };
+
+  const isAlreadyFavorited = favoriteBooks.some(
+    (book) => book.name === favoriteBook.name
+  );
+
+  if (!isAlreadyFavorited) {
+    favoriteBooks.push(favoriteBook);
+    localStorage.setItem("favorites", JSON.stringify(favoriteBooks));
+    alert(`${favoriteBook.name} added to favorites!`);
+  } else {
+    alert(`${favoriteBook.name} is already in favorites!`);
+  }
+});
+
+
 
 
 newestBookFiltred1.forEach(book => {
@@ -129,7 +172,7 @@ selfDevBooks.slice(6,9).forEach(book => {
     bestSelfDevCarouselItem3.innerHTML += (cartCreator(book));
 })
 
-// best of snovels section
+// best of novels section
 
 const bestNovelsCarouselItem1 = document.getElementById("bestNovelsCarouselItem1");
 const bestNovelsCarouselItem2 = document.getElementById("bestNovelsCarouselItem2");
