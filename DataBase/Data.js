@@ -479,9 +479,7 @@ export default function books() {
     "ayse: I devoured it in one sitting.",
     "emre: Great conclusion with unexpected turns."
   ]
-}
-export default function books() {
-  return [
+},
     {
       cover:
         "https://images-na.ssl-images-amazon.com/images/I/81EVdWdmOKL._AC_UL226_SR226,226_.jpg",
