@@ -149,6 +149,123 @@ sortednovelsPerRate.slice(8,12).forEach(book => {
     bestNovelsCarouselItem3.innerHTML += (cartCreator(book));
 })
 
+// -------------Taha Demir -------------------
+const canvas = document.getElementById('wheel');
+const ctx = canvas.getContext('2d');
+const spinBtn = document.getElementById('spin-button');
+const resultDiv = document.getElementById('discount-result');
+
+const segments = [
+  { code: "SAVE10", text: "%10 İndirim", color: "#f28b82" },
+  { code: "SAVE15", text: "%15 İndirim", color: "#fbbc04" },
+  { code: "SAVE20", text: "%20 İndirim", color: "#34a853" },
+  { code: "FREESHIP", text: "Ücretsiz Kargo", color: "#4285f4" },
+  { code: "WELCOME5", text: "Hoşgeldin %5", color: "#d93025" }
+];
+
+const centerX = canvas.width / 2;
+const centerY = canvas.height / 2;
+const radius = 100;
+const anglePerSegment = (2 * Math.PI) / segments.length;
+
+let angle = 0;
+let spinning = false;
+
+function drawWheel() {
+  for (let i = 0; i < segments.length; i++) {
+    const startAngle = i * anglePerSegment;
+    const endAngle = startAngle + anglePerSegment;
+
+    ctx.beginPath();
+    ctx.moveTo(centerX, centerY);
+    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+    ctx.fillStyle = segments[i].color;
+    ctx.fill();
+    ctx.stroke();
+
+    // Text
+    ctx.save();
+    ctx.translate(centerX, centerY);
+    ctx.rotate(startAngle + anglePerSegment / 2);
+    ctx.textAlign = "right";
+    ctx.fillStyle = "#fff";
+    ctx.font = "bold 14px sans-serif";
+    ctx.fillText(segments[i].text, radius - 10, 5);
+    ctx.restore();
+  }
+}
+
+function drawPointer() {
+  ctx.save();
+  ctx.translate(centerX, centerY + radius + 25); // Çarkın alt kısmına yerleştir
+
+  // Ok şekli (yukarı bakan)
+  ctx.beginPath();
+  ctx.moveTo(0, -10);   // Uç noktası (yukarıda)
+  ctx.lineTo(-8, 10);   // Sol kanat
+  ctx.lineTo(-3, 6);    // Gövde sol
+  ctx.lineTo(3, 6);     // Gövde sağ
+  ctx.lineTo(8, 10);    // Sağ kanat
+  ctx.closePath();
+
+  ctx.fillStyle = "#000";
+  ctx.fill();
+  ctx.restore();
+}
+
+spinBtn.addEventListener('click', () => {
+  if (spinning) return;
+  spinning = true;
+  spinBtn.disabled = true;
+
+  const spins = 5;
+  const randomAngleDeg = Math.random() * 360;
+  const finalAngle = (360 * spins + randomAngleDeg) * Math.PI / 180;
+
+  const duration = 5000;
+  const start = performance.now();
+
+  function animate(time) {
+    const elapsed = time - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const easeOut = 1 - Math.pow(1 - progress, 4);
+
+    angle = easeOut * finalAngle;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Çarkı döndür ve çiz
+    ctx.save();
+    ctx.translate(centerX, centerY);
+    ctx.rotate(angle);
+    ctx.translate(-centerX, -centerY);
+    drawWheel();
+    ctx.restore();
+
+    // Sabit pointer'ı çiz (çark dönse de yerinde kalacak)
+    drawPointer();
+
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      // Pointer açısı sabit, çark açısına göre kazanan dilimi bulalım
+      const normalizedAngle = angle % (2 * Math.PI);
+      // pointer açı = 90° yani PI/2, fakat çark döndüğü için bunu hesaba kat
+      const pointerAngle = (Math.PI / 2 - normalizedAngle + 2 * Math.PI) % (2 * Math.PI);
+
+      const selectedIndex = Math.floor(pointerAngle / anglePerSegment) % segments.length;
+      const selected = segments[selectedIndex];
+
+    resultDiv.innerHTML = `🎉 Tebrikler! Size özel indirim kodunuz: <span style="color:#dc3545;">${selected.code}</span> (${selected.text})`;
+
+      localStorage.setItem('discountCode', selected.code);
+      spinning = false;
+      spinBtn.disabled = false;
+    }
+  }
+
+  requestAnimationFrame(animate);
+});
 // ---------YENİ EKLENDİ -------
 // discounted books section
 

@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İndirim Çarkı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<canvas id="wheel" width="300" height="300"></canvas>
+
+  <h1>İndirim Çarkı</h1>
+
+  <div id="wheel-container">
+    <div id="pointer"></div>
+    <div id="wheel">
+      <div class="segment"><span>%10 İndirim</span></div>
+      <div class="segment"><span>%15 İndirim</span></div>
+      <div class="segment"><span>%20 İndirim</span></div>
+      <div class="segment"><span>Ücretsiz Kargo</span></div>
+      <div class="segment"><span>Hoşgeldin %5</span></div>
+    </div>
+  </div>
+
+  <button id="spin-button">Çarkı Çevir</button>
+
+  <div id="discount-result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=chrome,edge" />
@@ -677,9 +709,126 @@
           localStorage.removeItem("currentUser");
           window.location.reload(); // Sayfayı yenile
         });
+        // ------------- Taha Demir ----------------
+      } // Çark kısmı için değişkenler ve fonksiyonlar
+    const canvas = document.getElementById('wheel');
+    const ctx = canvas.getContext('2d');
+    const spinBtn = document.getElementById('spin-button');
+    const resultDiv = document.getElementById('discount-result');
+
+    const segments = [
+      { code: "SAVE10", text: "%10 İndirim", color: "#f28b82" },
+      { code: "SAVE15", text: "%15 İndirim", color: "#fbbc04" },
+      { code: "SAVE20", text: "%20 İndirim", color: "#34a853" },
+      { code: "FREESHIP", text: "Ücretsiz Kargo", color: "#4285f4" },
+      { code: "WELCOME5", text: "Hoşgeldin %5", color: "#d93025" }
+    ];
+
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const radius = 100;
+    const anglePerSegment = (2 * Math.PI) / segments.length;
+
+    let angle = 0;
+    let spinning = false;
+
+    function drawWheel() {
+      for (let i = 0; i < segments.length; i++) {
+        const startAngle = i * anglePerSegment;
+        const endAngle = startAngle + anglePerSegment;
+
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+        ctx.fillStyle = segments[i].color;
+        ctx.fill();
+        ctx.stroke();
+
+        // Text
+        ctx.save();
+        ctx.translate(centerX, centerY);
+        ctx.rotate(startAngle + anglePerSegment / 2);
+        ctx.textAlign = "right";
+        ctx.fillStyle = "#fff";
+        ctx.font = "bold 14px sans-serif";
+        ctx.fillText(segments[i].text, radius - 10, 5);
+        ctx.restore();
       }
+    }
+
+    function drawPointer() {
+      ctx.save();
+      ctx.translate(centerX, centerY + radius + 25);
+
+      ctx.beginPath();
+      ctx.moveTo(0, -10);
+      ctx.lineTo(-8, 10);
+      ctx.lineTo(-3, 6);
+      ctx.lineTo(3, 6);
+      ctx.lineTo(8, 10);
+      ctx.closePath();
+
+      ctx.fillStyle = "#000";
+      ctx.fill();
+      ctx.restore();
+    }
+
+    // İlk çark çizimi
+    drawWheel();
+    drawPointer();
+
+    spinBtn.addEventListener('click', () => {
+      if (spinning) return;
+      spinning = true;
+      spinBtn.disabled = true;
+
+      const spins = 5;
+      const randomAngleDeg = Math.random() * 360;
+      const finalAngle = (360 * spins + randomAngleDeg) * Math.PI / 180;
+
+      const duration = 5000;
+      const start = performance.now();
+
+      function animate(time) {
+        const elapsed = time - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeOut = 1 - Math.pow(1 - progress, 4);
+
+        angle = easeOut * finalAngle;
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.save();
+        ctx.translate(centerX, centerY);
+        ctx.rotate(angle);
+        ctx.translate(-centerX, -centerY);
+        drawWheel();
+        ctx.restore();
+
+        drawPointer();
+
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        } else {
+          const normalizedAngle = angle % (2 * Math.PI);
+          const pointerAngle = (Math.PI / 2 - normalizedAngle + 2 * Math.PI) % (2 * Math.PI);
+
+          const selectedIndex = Math.floor(pointerAngle / anglePerSegment) % segments.length;
+          const selected = segments[selectedIndex];
+
+          resultDiv.innerHTML = `🎉 Tebrikler! Size özel indirim kodunuz: <span style="color:#dc3545;">${selected.code}</span> (${selected.text})`;
+          localStorage.setItem('discountCode', selected.code);
+          spinning = false;
+          spinBtn.disabled = true;
+        }
+      }
+
+      requestAnimationFrame(animate);
     });
-  </script>
+    
+    });
+  
+</script>
 </body>
 
 </html>

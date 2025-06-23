@@ -423,3 +423,63 @@ h1, h2, h3, h4, h5, h6 {
     width: 16px; /* Set the width of the icon */
     height: 16px; /* Set the height of the icon */
 }
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fefefe;
+  padding: 20px;
+}
+
+h1 {
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+.wheel-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.pointer {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid #dc3545;
+  z-index: 10;
+}
+
+#spin-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#spin-button:disabled {
+  background: #a83a3a;
+  cursor: not-allowed;
+}
+
+#discount-result {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+}
