@@ -480,7 +480,7 @@ export default function books() {
     "emre: Great conclusion with unexpected turns."
   ]
 },
-    {
+{
       cover:
         "https://images-na.ssl-images-amazon.com/images/I/81EVdWdmOKL._AC_UL226_SR226,226_.jpg",
       name: "Brown Bear, Brown Bear, What Do You See?",
@@ -720,205 +720,238 @@ export default function books() {
         "dilek: Beautiful storytelling and suspense."
       ]
     },
- {
-      cover:
-        "https://m.media-amazon.com/images/I/51U0RLLU7vS._AC_UF226,226_FMjpg_.jpg",
-      name: "The Art of War",
-      price: "13.58",
-      date: 31,
-      deal: true,
-      lastPrice: "$16.99",
-      categorie: ["novel", "philosophy"],
-      gone:false,
+      {
+  cover: "https://m.media-amazon.com/images/I/51U0RLLU7vS._AC_UF226,226_FMjpg_.jpg",
+  name: "The Art of War",
+  price: "13.58",
+  date: 31,
+  deal: true,
+  lastPrice: "$16.99",
+  categorie: ["novel", "philosophy"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          </div>`,
+  summary: "A timeless strategic classic on war tactics and leadership applicable beyond battlefields.",
+  comments: [
+    "ali: Insightful and practical — a must-read for strategy lovers.",
+    "ayse: Helped me understand conflict and strategy better."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51lhjx1Qw3L._AC_UF226,226_FMjpg_.jpg",
+  name: "Behave: The Biology of Humans",
+  price: "15.87",
+  date: 32,
+  deal: true,
+  lastPrice: "$18.09",
+  categorie: ["self-dev", "philosophy"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          </div>`,
+  summary: "An in-depth exploration of human behavior from a biological and psychological perspective.",
+  comments: [
+    "burak: Fascinating explanations backed by science.",
+    "zeynep: Complex but very rewarding read."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/41Byw-nqa3L._AC_UF226,226_FMjpg_.jpg",
+  name: "The 21 Irrefutable Laws of Leadership",
+  price: "21.49",
+  date: 33,
+  deal: true,
+  lastPrice: "$18.49",
+  categorie: ["self-dev"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          </div>`,
+  summary: "A clear, practical guide presenting essential leadership principles for personal and professional growth.",
+  comments: [
+    "emre: Great for anyone looking to improve leadership skills.",
+    "selin: Easy to understand with useful real-world examples."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51lIUQSVCsL._AC_UF226,226_FMjpg_.jpg",
+  name: "X-Men Omnibus",
+  price: "34.99",
+  date: 34,
+  deal: true,
+  lastPrice: "$48.16",
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          </div>`,
+  summary: "A collection of thrilling X-Men stories packed with action and character depth.",
+  comments: [
+    "deniz: Perfect for comic fans and newcomers alike.",
+    "serkan: Loved the storytelling and artwork."
+  ]
+},
 
-      rating: 4.5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            </div>`,
-    },
-    {
-      cover:
-        "	https://m.media-amazon.com/images/I/51lhjx1Qw3L._AC_UF226,226_FMjpg_.jpg",
-      name: "Behave: The Biology of Humans",
-      price: "15.87",
-      date: 32,
-      deal: true,
-      lastPrice: "$18.09",
-      categorie: ["self-dev", "philosophy"],
-      gone:false,
- rating: 4.5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            </div>`,
-    },
-    {
-      cover:
-        "https://m.media-amazon.com/images/I/41Byw-nqa3L._AC_UF226,226_FMjpg_.jpg",
-      name: "The 21 Irrefutable Laws of Leadership",
-      price: "21.49",
-      date: 33,
-      deal: true,
-      lastPrice: "$18.49",
-      categorie: ["self-dev"],
-      gone:false,
+  {
+  cover: "https://m.media-amazon.com/images/I/41S21miKn1S._AC_UF226,226_FMjpg_.jpg",
+  name: "Close Your Eyes, Sleep",
+  price: "13.59",
+  date: 35,
+  deal: true,
+  lastPrice: "$34.40",
+  categorie: ["novel"],
+  gone: false,
+  rating: 3.5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          <i class="bi bi-star text-warning"></i>
+          </div>`,
+  summary: "A gripping novel that delves deep into human emotions and the power of rest.",
+  comments: [
+    "elif: A calming read that really touched me.",
+    "murat: Beautifully written, but a bit slow paced."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/51CCYukH2nL._AC_SR226,226_.jpg",
+  name: "JoJo's Bizarre Adventure",
+  price: "15.30",
+  date: 36,
+  deal: true,
+  lastPrice: "$19.61",
+  categorie: ["novel"],
+  gone: false,
+  rating: 5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          </div>`,
+  summary: "A legendary manga series packed with action, unique characters, and unforgettable moments.",
+  comments: [
+    "yusuf: Absolutely fantastic series!",
+    "deniz: The art and story are top notch."
+  ]
+},
+{
+  cover: "https://images-na.ssl-images-amazon.com/images/I/41ovZVriMRL._AC_SR226,226_.jpg",
+  name: "Marx for Beginners",
+  price: "14.50",
+  date: 37,
+  deal: true,
+  lastPrice: "$17.00",
+  categorie: ["self-dev", "philosophy"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          </div>`,
+  summary: "An accessible introduction to Marx’s ideas and their impact on modern thought.",
+  comments: [
+    "selma: Clear and educational introduction.",
+    "ahmet: Makes complex topics understandable."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51hIRYMlt6L._AC_UF226,226_FMjpg_.jpg",
+  name: "The System",
+  price: "11.99",
+  date: 38,
+  deal: true,
+  lastPrice: "$13.01",
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          </div>`,
+  summary: "A thrilling novel exploring hidden forces that shape society and individuals.",
+  comments: [
+    "ayse: Keeps you hooked till the last page.",
+    "kemal: Thought-provoking and well-written."
+  ]
+},
+{
+  cover: "https://m.media-amazon.com/images/I/51phGHo7TmL._AC_UF226,226_FMjpg_.jpg",
+  name: "Reluctantly Home",
+  price: "10.99",
+  date: 39,
+  deal: true,
+  lastPrice: "$14.99",
+  categorie: ["self-dev"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          </div>`,
+  summary: "A heartfelt journey about finding oneself and the true meaning of home.",
+  comments: [
+    "emine: Inspiring and relatable story.",
+    "fatih: A beautiful read about personal growth."
+  ]
+},
 
-      rating: 4.5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            </div>`,
-    },
-    {
-      cover:
-        "	https://m.media-amazon.com/images/I/51lIUQSVCsL._AC_UF226,226_FMjpg_.jpg",
-      name: "X-Men Omnibus",
-      price: "34.99",
-      date: 34,
-      deal: true,
-      lastPrice: "$48.16",
-      categorie: ["novel"],
-      gone:false,
-
-      rating: 4.5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            </div>`,
-    },
-    {
-      cover:
-        "https://m.media-amazon.com/images/I/41S21miKn1S._AC_UF226,226_FMjpg_.jpg",
-      name: "Close Your Eyes, Sleep",
-      price: "13.59",
-      date: 35,
-      deal: true,
-      lastPrice: "$34.40",
-      categorie: ["novel"],
-      gone:false,
-
-      rating: 3.5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            <i class="bi bi-star text-warning"></i>
-            </div>`,
-    },
- {
-      cover:
-        "	https://images-na.ssl-images-amazon.com/images/I/51CCYukH2nL._AC_SR226,226_.jpg",
-      name: "JoJo's Bizarre Adventure",
-      price: "15.30",
-      date: 36,
-      deal: true,
-      lastPrice: "$19.61",
-      categorie: ["novel"],
-      gone:false,
-
-      rating: 5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            </div>`,
-    },
-    {
-      cover:
-        "https://images-na.ssl-images-amazon.com/images/I/41ovZVriMRL._AC_SR226,226_.jpg",
-      name: "Marx for Beginners",
-      price: "14.50",
-      date: 37,
-      deal: true,
-      lastPrice: "$17.00",
-      categorie: ["self-dev", "philosophy"],
-      gone:false,
-
-      rating: 4.5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            </div>`,
-    },
-    {
-      cover:
-        "	https://m.media-amazon.com/images/I/51hIRYMlt6L._AC_UF226,226_FMjpg_.jpg",
-      name: "The System",
-      price: "11.99",
-      date: 38,
-      deal: true,
-      lastPrice: "$13.01",
-      categorie: ["novel"],
-      gone:false,
-
-      rating: 4.5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            </div>`,
-    },
-    {
-      cover:
-        "https://m.media-amazon.com/images/I/51phGHo7TmL._AC_UF226,226_FMjpg_.jpg",
-      name: "Reluctantly Home",
-      price: "10.99",
-      date: 39,
-      deal: true,
-      lastPrice: "$14.99",
-      categorie: ["self-dev"],
-      gone:false,
-
-      rating: 4.5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            </div>`,
-    },
-    {
-      cover:
-        "https://m.media-amazon.com/images/I/51Fd-5fMDOL._AC_UF226,226_FMjpg_.jpg",
-      name: "The Recipe for Hope",
-      price: "14.99",
-      date: 40,
-      deal: true,
-      lastPrice: "$14.99",
-      categorie: ["novel"],
-      gone:false,
-
-      rating: 4.5,
-      stars: `<div class="ratings">
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-fill text-warning"></i>
-            <i class="bi bi-star-half text-warning"></i>
-            </div>`,
-    },
+   {
+  cover: "https://m.media-amazon.com/images/I/51Fd-5fMDOL._AC_UF226,226_FMjpg_.jpg",
+  name: "The Recipe for Hope",
+  price: "14.99",
+  date: 40,
+  deal: true,
+  lastPrice: "$14.99",
+  categorie: ["novel"],
+  gone: false,
+  rating: 4.5,
+  stars: `<div class="ratings">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-half text-warning"></i>
+          </div>`,
+  summary: "An uplifting novel that explores the power of hope and resilience in challenging times.",
+  comments: [
+    "serdar: Truly inspiring story that lifted my spirits.",
+    "aylin: A heartfelt narrative about overcoming adversity."
+  ]
+},
 {
       cover:
         "https://m.media-amazon.com/images/I/41x3-s3mZFL._AC_UF226,226_FMjpg_.jpg",
