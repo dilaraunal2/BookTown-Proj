@@ -12,17 +12,31 @@ const newestBookFiltred3 = books().filter(book => book.date <= 12 && book.date >
 
 function cartCreator(book) {
     return `<div class="col-lg-3 col-sm-6">
-    <div class="thumb-wrapper">
-      <div class="img-box">
-        <img src="${book.cover}" class="img-fluid" alt="book img">
+      <div class="thumb-wrapper">
+        <div class="img-box">
+          <img src="${book.cover}" class="img-fluid" alt="book img">
+        </div>
+        <div class="thumb-content">
+          <h4 class="book-name">${book.name}</h4>
+          ${book.stars}
+          <p class="item-price"><strike>${book.lastPrice || ""}</strike><b>$${book.price}</b></p>
+          ${book.summary ? `<p class="book-summary">${book.summary}</p>` : ""}
+          ${
+            book.comments
+              ? `<div class="book-comments">
+                  <h6>Comments:</h6>
+                  <ul>
+                    ${book.comments
+                      .map((comment) => `<li>${comment}</li>`)
+                      .join("")}
+                  </ul>
+                </div>`
+              : ""
+          }
+          <button class="btn btn-outline-danger"> Add to Cart <i class="bi bi-bag"></i></button>
+        </div>
       </div>
-      <div class="thumb-content">
-        <h4 class="book-name">${book.name}</h4>
-            ${book.stars}
-        <p class="item-price"><strike>${book.lastPrice || ""}</strike><b>$${book.price}</b></p>
-        <button class="btn btn-outline-danger"> Add to Cart <i class="bi bi-bag"></i></button>
-      </div>
-    </div>`
+    </div>`;
 }
 
 newestBookFiltred1.forEach(book => {
@@ -124,7 +138,7 @@ selfDevBooks.slice(6,9).forEach(book => {
     bestSelfDevCarouselItem3.innerHTML += (cartCreator(book));
 })
 
-// best of snovels section
+// best of novels section
 
 const bestNovelsCarouselItem1 = document.getElementById("bestNovelsCarouselItem1");
 const bestNovelsCarouselItem2 = document.getElementById("bestNovelsCarouselItem2");
