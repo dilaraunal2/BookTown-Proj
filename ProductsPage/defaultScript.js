@@ -16,26 +16,34 @@ dropdownItems.forEach((el) => {
 });
   getCartCount()
 export default function productMaker(bookData) {
+  main.innerHTML = ""; // Clear previous content before adding new
   bookData.forEach((book) => {
-    main.innerHTML += `<div class="thumb-wrapper flex-column shadow position-relative">
-  <div class="img-box position-relative">
-    <img src="${book.cover}" class="img-fluid" alt="book cover">
-    <button class="favorite-btn position-absolute top-0 end-0 m-2 btn btn-light">
-      <i class="bi bi-heart fs-5 text-danger"></i>
-    </button>
-  </div>
-  <div class="thumb-content">
-    <h4 class="book-name">${book.name}</h4>
-    <div class="star-rating">
-      ${book.stars}
-    </div>
-    <p class="item-price"><strike class="">${book.lastPrice || ""}</strike><b>$${
-      book.price
-    }</b></p>
-    <button class="btn btn-outline-danger"> Add to Cart <i class="bi bi-bag"></i></button>
-  </div>
-</div>`;
-
+    main.innerHTML += `
+      <div class="thumb-wrapper flex-column shadow position-relative">
+        <div class="img-box position-relative">
+          <img src="${book.cover}" class="img-fluid" alt="book cover">
+          <button class="favorite-btn position-absolute top-0 end-0 m-2 btn btn-light">
+            <i class="bi bi-heart fs-5 text-danger"></i>
+          </button>
+        </div>
+        <div class="thumb-content">
+          <h4 class="book-name">${book.name}</h4>
+          <div class="star-rating">
+            ${book.stars}
+          </div>
+          <p class="item-price">
+            <strike>${book.lastPrice || ""}</strike>
+            <b>$${book.price}</b>
+          </p>
+          <p class="book-summary">${book.summary || ""}</p>
+          <div class="book-comments">
+            ${book.comments
+              ? book.comments.map((comment) => `<p class="comment">${comment}</p>`).join("")
+              : ""}
+          </div>
+          <button class="btn btn-outline-danger"> Add to Cart <i class="bi bi-bag"></i></button>
+        </div>
+      </div>`;
   });
 }
 
